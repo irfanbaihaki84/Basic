@@ -12,3 +12,9 @@ push an existing repository from the command line
 3.  git push -u origin main
 
 importing code from another repository
+
+pull request from existing repository
+git pull https://github.com/irfanbaihaki84/Basic.git
+
+clone request from existing repository
+git clone https://github.com/irfanbaihaki84/Basic.git
