@@ -64,7 +64,33 @@ div1.innerHTML = `
         </div>
     </div>
 
-    <a href="#" class="link">Pricing</a>
+    <ul>
+        <li>
+            <p className="dropdown-title">Pricing</p>
+            <ul className="dropdown">
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      HTML
+                    </a>
+                </li>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      CSS
+                    </a>
+                </li>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      JavaScript
+                    </a>
+                </li>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      NodeJS
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
     <div class="dropdown" data-dropdown>
         <button class="link" data-dropdown-button>Login</button>
