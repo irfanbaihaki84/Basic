@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header */
+header {
+  background-color: #262626;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+/* header */
+
+/* hero */
+.hero {
+  background-image: url(assets/coffee.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 130vh;
+  align-items: center;
+  display: flex;
+  color: aqua;
+}
+/* hero */
+
+/* about */
+.about {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.about h2 {
+  padding-bottom: 15px;
+}
+
+.about .row {
+  display: flex;
+  padding: 0 20px;
+}
+
+.about .row .about-img img {
+  height: 15rem;
+  width: 20rem;
+}
+/* about */
+
+/* product */
+.product-list {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.product-list h2 {
+  padding-bottom: 15px;
+}
+
+.product-list .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-list .row .list-card {
+  margin: 20px 10px;
+  padding: 10px 10px;
+  border: 1px solid #262626;
+  border-radius: 10px;
+}
+
+.product-list .row .list-card .list-card-img {
+  width: 300px;
+}
+/* product */
+
+/* contact */
+.contact {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contact h2,
+h3 {
+  padding-bottom: 15px;
+}
+
+.contact .contact-group {
+  padding: 10px;
+}
+
+.contact .contact-group .row {
+  background-color: grey;
+  padding: 15px 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.contact .contact-group .row .contact-item {
+  display: flex;
+}
+/* contact */
+
+/* footer */
+footer {
+  text-align: center;
+  min-height: 50px;
+  padding-top: 10px;
+  background-color: chocolate;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: cyan;
+}
+/* footer */
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .about .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+
+  .about .row .about-img img {
+    width: 95%;
+  }
+
+  .product-list .row .list-card .list-card-img {
+    width: 95%;
+  }
+
+  .contact .contact-group .row .contact-item {
+    flex-wrap: wrap;
+  }
+}
