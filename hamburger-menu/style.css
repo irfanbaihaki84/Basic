@@ -78,12 +78,35 @@ li {
   display: flex;
   color: aqua;
 }
+
+.hero .hero-link {
+  color: black;
+  text-decoration: none;
+  border: 2px solid aqua;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: chocolate;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.hero-link:hover {
+  color: white;
+}
+
+.hero h1,
+.hero p {
+  line-height: 40px;
+  padding-left: 30px;
+  text-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+}
 /* hero */
 
 /* about */
 .about {
   text-align: center;
   padding-top: 30px;
+  background-color: chocolate;
 }
 
 .about h2 {
@@ -105,6 +128,7 @@ li {
 .product-list {
   text-align: center;
   padding-top: 30px;
+  background-color: chocolate;
 }
 
 .product-list h2 {
@@ -133,6 +157,7 @@ li {
 .contact {
   text-align: center;
   padding-top: 30px;
+  background-color: chocolate;
 }
 
 .contact h2,
@@ -162,7 +187,8 @@ footer {
   text-align: center;
   min-height: 50px;
   padding-top: 10px;
-  background-color: chocolate;
+  color: white;
+  background-color: #262626;
 }
 
 .footer-link {
