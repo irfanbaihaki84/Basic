@@ -8,6 +8,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+span {
+  color: rgb(2, 207, 139);
+}
+
 /* header */
 header {
   background-color: #262626;
@@ -88,6 +92,7 @@ li {
   background-color: chocolate;
   font-weight: 700;
   margin-left: 30px;
+  text-decoration: underline;
 }
 
 .hero-link:hover {
@@ -111,6 +116,7 @@ li {
 
 .about h2 {
   padding-bottom: 15px;
+  text-decoration: underline;
 }
 
 .about .row {
@@ -133,6 +139,7 @@ li {
 
 .product-list h2 {
   padding-bottom: 15px;
+  text-decoration: underline;
 }
 
 .product-list .row {
@@ -163,6 +170,7 @@ li {
 .contact h2,
 h3 {
   padding-bottom: 15px;
+  text-decoration: underline;
 }
 
 .contact .contact-group {
