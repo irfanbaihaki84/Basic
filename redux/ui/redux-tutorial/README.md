@@ -15,3 +15,5 @@ Currently, two official plugins are available:
 - masuk ke dalam directory: cd my-app-name
 - ketik npm install
 - ketik npm run dev
+- ketik npm install redux
+- ketik npm i @reduxjs/toolkit
