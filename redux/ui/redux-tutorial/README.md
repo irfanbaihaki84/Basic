@@ -9,14 +9,9 @@ Currently, two official plugins are available:
 
 # CARA MEMBUAT REACT APP MENGGUNAKAN VITE JS
 
-npm create vite@latest my-app-name -- -- template react
-
-pilih react
-
-pilih javascript
-
-masuk ke dalam directory: cd my-app-name
-
-ketik npm install
-
-ketik npm run dev
+- npm create vite@latest my-app-name -- -- template react
+- pilih react
+- pilih javascript
+- masuk ke dalam directory: cd my-app-name
+- ketik npm install
+- ketik npm run dev
